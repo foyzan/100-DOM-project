@@ -167,6 +167,9 @@ function validateGuess(guess) {
 
 // Check the user's guess against the random number
 function checkGuess(guess) {
+
+    const diff = Math.abs(randomNumber - guess);
+
     if (guess === randomNumber) {
         const win = document.createElement("h2");
         win.classList.add("lowOrHi");
@@ -174,11 +177,11 @@ function checkGuess(guess) {
         endGame(); // End the game if the user guesses correctly
         document.querySelector(".button").appendChild(win);
         return true;
-    } else if (Math.abs(randomNumber - guess) < 3) {
+    } else if (diff < 3) {
         displayMessage(`You are Too close`);
-    } else if (Math.abs(randomNumber - guess) < 5) {
+    } else if (diff < 5) {
         displayMessage(`You are close`);
-    } else if (Math.abs(randomNumber - guess) < 10) {
+    } else if (diff < 10) {
         displayMessage(`You are within Range`);
     } else if (randomNumber - guess >= 20) {
         displayMessage(`Your guess is Too low`);
