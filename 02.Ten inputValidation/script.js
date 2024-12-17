@@ -16,7 +16,9 @@ form.addEventListener('submit', function(event) {
     let isBlank = false;
 
     // Iterate over each input element
-    inputs.forEach(function(input) {
+
+
+    /***  inputs.forEach(function(input) {
         // Check if the input field is empty after trimming whitespace
         if (input.value.trim() === "") {
             isBlank = true;
@@ -31,5 +33,24 @@ form.addEventListener('submit', function(event) {
         // Clear the error message if all fields are filled
         h1.innerText = "";
         h1.style.color = '';
+    } ***/
+
+
+    // more optimized by using for loop
+
+    for(let i = 0; i < inputs.length; i++) {
+        if(inputs[i].value.trim() === "") {
+            h1.innerText = "All input must be filled";
+            h1.style.color = 'red';
+            isBlank = true;
+            break;
+        }
+
+        if(!isBlank)
+        {
+            h1.innerText = "";
+            h1.style.color = '';
+        }
     }
+
 });
