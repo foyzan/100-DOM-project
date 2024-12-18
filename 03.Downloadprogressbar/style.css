@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #212121;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1{
+    color: rgb(33, 236, 53);
+}
+
+.center {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#clock {
+    font-size: 40px;
+    background-color: orange;
+    padding: 20px 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.progressBar{
+    width: 300px;
+    height: 6px;
+    background-color: rgb(206, 205, 205);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.progressBarValue{
+    width: 20%;
+    height: 100%;
+    background-color: green;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+    -moz-transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+    -ms-transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+}
+
+.center h3{
+    color: powderblue;
+}
