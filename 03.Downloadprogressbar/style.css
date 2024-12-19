@@ -60,7 +60,7 @@ nav h1{
 .progressBarValue{
     width: 20%;
     height: 100%;
-    background-color: green;
+    background-color: rgb(37, 125, 233);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -74,5 +74,7 @@ nav h1{
 }
 
 .center h3{
-    color: powderblue;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    margin-bottom: 10px;
 }
