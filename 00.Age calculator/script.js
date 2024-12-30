@@ -54,10 +54,18 @@ btn.addEventListener('click', function() {
     var dayDiff = today.getDate() - birthdayDate.getDate();
 
     // Adjust the year difference if the birth month and day haven't occurred yet this year
-    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
-        yearDiff--;        
+    if (monthDiff < 0) {
+        yearDiff--;
+        monthDiff += 12;
+
+    }
+
+    if(dayDiff < 0)
+    {
+        monthDiff--;
+        dayDiff += 30;
     }
 
     // Display the result
-    result.innerText = `You are ${yearDiff} years old.`;
+    result.innerText = `You are ${yearDiff} years ${monthDiff} months and ${dayDiff} days old.`;
 });
