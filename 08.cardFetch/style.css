@@ -1,0 +1,122 @@
+/* Reset default browser styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font and size for the entire document */
+body, html{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container styling */
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(8, 7, 7, 0.742);
+}
+
+/* Inner container styling */
+#main .container{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+/* Cards container styling */
+.cards{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Individual card styling */
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    background: #191818;
+    width: 300px;
+    padding: 20px;
+    color: rgb(244, 237, 237);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+/* Card title styling */
+.card h4 {
+    white-space: normal; /* Allow text to wrap to the next line */
+    overflow-wrap: break-word; /* Break long words to fit within the container */
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Card image container styling */
+.card .img{
+    width: 5rem;
+    height: 5rem;
+    background-color: blueviolet;
+    margin-bottom: 1rem;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+/* Card image styling */
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Button styling */
+button{
+    border: none;
+    padding: 15px 20px;
+    background: darkgreen;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button hover effect */
+button:hover{
+    background-color: rgb(9, 129, 9);
+    transform: scale(1.10);
+}
+
+/* Card description text styling */
+.card p{
+    font-size: small;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #666;
+}
