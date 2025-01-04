@@ -1,17 +1,20 @@
-*{
+/* Reset margin and padding, set box-sizing to border-box */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+/* Set height, width, font, and background color for html and body */
+html, body {
     height: 100%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: rgba(10, 10, 10, 0.78);
 }
 
-#main{
+/* Main container styling */
+#main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +23,8 @@ html,body{
     width: 100%;
 }
 
-#main button{
+/* Button styling */
+#main button {
     border: none;
     padding: 10px 20px;
     font-size: 20px;
@@ -37,23 +41,28 @@ html,body{
     -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
 }
 
-.btnContainer .block{
+/* Block button styling */
+.btnContainer .block {
     background-color: #f11212;
     color: #f9f3f3;
     cursor: pointer;
 }
-.btnContainer .Unblock{
+
+/* Unblock button styling */
+.btnContainer .Unblock {
     background-color: #12f121;
     color: #f9f3f3;
     cursor: pointer;
 }
 
-#main  button:hover{
+/* Button hover effect */
+#main button:hover {
     background-color: #f9f3f3;
     color: #000;
-    
 }
-#main h2{
+
+/* Heading styling */
+#main h2 {
     color: #f9f3f3;
     font-size: 30px;
     margin-bottom: 20px;
