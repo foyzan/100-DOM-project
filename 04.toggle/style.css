@@ -1,24 +1,26 @@
-*{
+/* Reset margin and padding, set box-sizing to border-box */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+/* Set height, width, font for html and body */
+html, body {
     height: 100%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    
 }
 
-
-#main{
+/* Main container styling */
+#main {
     width: 100%;
     height: 200vh;
     padding: 100px;
     background-color: rgba(10, 10, 10, 0.78);
 }
 
+/* Button styling */
 #main button {
     position: fixed;
     border: none;
@@ -40,14 +42,18 @@ html, body{
     -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
 }
 
-#main .red{
+/* Red button styling */
+#main .red {
     background-color: #f11212;
 }
+
+/* Button hover effect */
 #main button:hover {
     background-color: #f9f3f3;
     color: #000;
 }
 
-.overflow-hidden{
+/* Overflow hidden class */
+.overflow-hidden {
     overflow: hidden;
 }
